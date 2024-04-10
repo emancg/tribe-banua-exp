@@ -26,7 +26,7 @@ const ContactBox = styled(Box)(({ theme }) => ({
 
 export default function ContactUs() {
     return (
-        <ContactBox maxWidth={'sm'}>
+        <ContactBox maxWidth={'sm'} id="contactus-section">
             <Stack direction="row" spacing={2} justifyContent={'center'}>
                 <DemoPaper variant="elevation" elevation={16}>
                     <h1>CONTACT US</h1>

@@ -31,8 +31,8 @@ const WhyChooseUsBox = styled(Box)(({ theme }) => ({
 
 export default function WhyChooseUs() {
   return (
-    <WhyChooseUsBox maxWidth={'sm'}>
-      <Divider />
+    <WhyChooseUsBox maxWidth={'sm'} id="whychooseus-section">
+      {/* <Divider /> */}
       <h2>WHY CHOOSE US?</h2>
       <Grid container>
         {itemData.map((item) => (

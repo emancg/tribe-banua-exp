@@ -64,7 +64,8 @@ const ItemBox = styled(Paper)(({ theme }) => ({
 
 export default function ServicesImageList() {
   return (
-    <SimpleBox maxWidth={'sm'}>
+    <SimpleBox maxWidth={'sm'} id="services-section">
+
       <h1>OUR SERVICES</h1>
       <SimpleStack>
         <Link href='/services/expeditions'>
@@ -72,15 +73,24 @@ export default function ServicesImageList() {
             <h2>EXPEDITIONS</h2>
           </ItemBox>
         </Link>
-        <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./island-tours.jpg')` }}>
-          <h2>ISLAND TOURS</h2>
-        </ItemBox>
-        <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./ferry-transfer.jpg')` }}>
-          <h2>FERRY TRANSFER</h2>
-        </ItemBox>
-        <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./van-transfer.jpg')` }}>
-          <h2>VAN TRANSFER</h2>
-        </ItemBox>
+
+        <Link href='/services/island-tours'>
+          <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./island-tours.jpg')` }}>
+            <h2>ISLAND TOURS</h2>
+          </ItemBox>
+        </Link>
+
+        <Link href='/services/ferry'>
+          <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./ferry-transfer.jpg')` }}>
+            <h2>FERRY TRANSFER</h2>
+          </ItemBox>
+        </Link>
+
+        <Link href='/services/van'>
+          <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('./van-transfer.jpg')` }}>
+            <h2>VAN TRANSFER</h2>
+          </ItemBox>
+        </Link>
       </SimpleStack>
     </SimpleBox>
   );

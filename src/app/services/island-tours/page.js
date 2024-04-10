@@ -18,7 +18,7 @@ const PageContainer = styled(Container)(({ theme }) => ({
     padding: 0,
     width: '100%',
     justifyContent: 'center',
-    backgroundImage: `url('../../expeditions.jpg')`,
+    backgroundImage: `url('../../island-tours.jpg')`,
     backgroundBlendMode: 'darken',
     backgroundColor: '#614e72',
     backgroundSize: 'cover',
@@ -66,7 +66,7 @@ const ItemBox = styled(Paper)(({ theme }) => ({
     boxShadow: '-2px 2px gray'
 }));
 
-export default function ExpeditionsPage() {
+export default function IslandToursPage() {
     return (
         <PageContainer maxWidth='xl'>
             {/* <SimpleContainer>
@@ -76,7 +76,7 @@ export default function ExpeditionsPage() {
                 </SimpleContainer> */}
             <SimpleContainer>
                 <PageBox maxWidth='sm'>
-                    <h1>EXPEDITIONS</h1>
+                    <h1>ISLAND TOURS</h1>
                     {/* <Box position={'relative'} height={'100%'} sx={{width: '90%', boxShadow: '10px 10px 10px black'}}>
                             <Image
                                 fill
@@ -85,15 +85,15 @@ export default function ExpeditionsPage() {
                             />
                         </Box> */}
 
-                    <h2>What is the Tribe Banua Expedition?</h2>
-                    <p>Embark on a 3-day boat expedition from Linapacan to Culion, Palawan, where you'll be immersed in an array of unforgettable experiences. Snorkel amidst vibrant coral reefs, encountering a kaleidoscope of marine life. Visit remote tribe villages, engaging with locals, witnessing traditional dances, and learning about their customs. Navigate through mangrove forests on kayaks, exploring hidden lagoons and tranquil waterways. Spend nights in native houses, embracing the authentic charm of Palawan's culture. This expedition promises an extraordinary blend of adventure, cultural immersion, and natural beauty, making it an experience of a lifetime.</p>
+                    <h2>Are you craving an escape into nature's embrace?</h2>
+                    <p>Welcome to Tribe Banua's El Nido Island Tours, your gateway to the wonders of this tropical paradise! Our meticulously crafted tours offer an immersive experience, blending adventure with relaxation as you explore the stunning beauty of El Nido's islands. Picture yourself gliding through crystal-clear waters, surrounded by towering limestone cliffs and vibrant marine life. With our expert guides, you'll discover hidden lagoons, pristine beaches, and awe-inspiring snorkeling spots. Let Tribe Banua be your companion as you create cherished memories in one of the world's most enchanting destinations. Join us and unlock the treasures of El Nido's islands today!</p>
                     <Divider sx={{ borderColor: 'white', width: '25%' }}></Divider>
 
-                    <h2>What to expect from this grand tour?</h2>
-                    <p></p>
+                    <h2>The kind of tour for you.</h2>
+                    <p>Each tour is designed to cater to all preferences, whether you seek adrenaline-pumping activities like cliff jumping or serene moments to bask in the sun's warm embrace. For more details, you can refer to the table below.</p>
                     <Divider sx={{ borderColor: 'white', width: '25%' }}></Divider>
 
-                    <h2>Are you ready for the tour of a lifetime?</h2>
+                    <h2>Ready to dive in?</h2>
                     <p>If you are, send us a message or connect with us thru our social accounts below.</p>
                     {/* <Divider sx={{borderColor:'white', width: '25%'}}></Divider> */}
 
@@ -109,16 +109,16 @@ export default function ExpeditionsPage() {
                 <PageBox maxWidth='sm' sx={{ textAlign: 'center', paddingTop: '0', justifyContent: 'start' }}>
                     <h2>SEE MORE OF OUR SERVICES</h2>
                     <SimpleStack>
-                        {/* <Link href='/pages/services/expeditions'>
+                        <Link href='/services/expeditions'>
                             <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('../../expeditions.jpg')` }}>
                                 <h2>EXPEDITIONS</h2>
                             </ItemBox>
-                        </Link> */}
-                        <Link href='/services/island-tours'>
+                        </Link>
+                        {/* <Link href='/services/island-tours'>
                             <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('../../island-tours.jpg')` }}>
                                 <h2>ISLAND TOURS</h2>
-                            </ItemBox>
-                        </Link>
+                            </ItemBox>\
+                        </Link> */}
                         <Link href='/services/ferry'>
                             <ItemBox variant='elevation' elevation={16} sx={{ backgroundImage: `url('../../ferry-transfer.jpg')` }}>
                                 <h2>FERRY TRANSFER</h2>
